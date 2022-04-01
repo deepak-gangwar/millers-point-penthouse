@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+// const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -44,10 +44,10 @@ module.exports = {
 
         }),
 
-        new HtmlWebpackPlugin({
-            template: path.join(__dirname, '../index.pug'),
-            minify: true
-        }),
+        // new HtmlWebpackPlugin({
+        //     template: path.join(__dirname, '../index.pug'),
+        //     minify: true
+        // }),
 
         new CopyWebpackPlugin({
             patterns: [
