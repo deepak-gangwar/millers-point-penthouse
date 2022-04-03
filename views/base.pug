@@ -1,0 +1,17 @@
+block variables 
+// Using pug's templates and extends
+
+doctype html
+html(lang="en")
+    head
+        include ./partials/head
+        include ./partials/noscript
+
+    body
+        include ./partials/preloader
+        include ./partials/navigation
+
+        .content#content(data-template=template)
+            block content
+
+        script(src="main.js")
